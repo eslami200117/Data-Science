@@ -99,7 +99,7 @@ class Mensch:
         return self._winner
 
 
-class Mensch_Simulate:
+class Mensch_Simulation:
     def __init__(self, num_game: int = 10000) -> None:
         self.num_game = num_game
 
@@ -119,7 +119,7 @@ class Mensch_Simulate:
 
 
 def main():
-    test = Mensch_Simulate(10000)
+    test = Mensch_Simulation(10000)
     result = test.simulate()
     print(result)
 
