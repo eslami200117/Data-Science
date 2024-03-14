@@ -13,7 +13,7 @@ class Peg:
         self._is_start = False
         self._virtual_position = virtual_position
 
-    def __str__(self) -> str:
+    def __repr__(self) -> str:
         return self._label + ": " + str(self._position) + f"({self.virtual_position})"
 
     def start(self) -> None:
@@ -65,7 +65,7 @@ class Mensch:
 
     def print_result(self, dice: int) -> None:
         print(self._current_player)
-        print(*self._players)
+        print(self._players)
         print(dice)
 
     def _check_boxes(self) -> bool:
