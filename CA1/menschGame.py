@@ -102,9 +102,6 @@ class Mensch:
 class Mensch_Simulation:
     def __init__(self, num_game: int = 10000) -> None:
         self.num_game = num_game
-
-    def roll_dice(self) -> int:
-        return random.randint(1, 6)
     
     def run(self) -> int:
         game = Mensch()
